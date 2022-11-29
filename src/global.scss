@@ -25,17 +25,13 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-#content-img{
-    background-image: url("https://cache.umusic.com/_sites/_halo/arianagrande/images/r6bg.jpg");
-    background-size: cover;
-    height: 94vh;
-}
 
 @font-face {
-    font-family: Poppins;
+    font-family: 'Poppins';
     src: url("assets/fonts/Poppins-Regular.ttf");
 }
 
-body ,html {
-    font-family: Poppins, Helvetica, Arial, sans-serif;
+@font-face {
+    font-family: 'Monument Extended';
+    src: url("assets/fonts/MonumentExtended-Regular.otf");
 }
