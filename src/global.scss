@@ -30,3 +30,12 @@
     background-size: cover;
     height: 94vh;
 }
+
+@font-face {
+    font-family: Poppins;
+    src: url("assets/fonts/Poppins-Regular.ttf");
+}
+
+body ,html {
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+}

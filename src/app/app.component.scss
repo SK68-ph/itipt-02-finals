@@ -112,10 +112,16 @@ ion-item.selected {
 }
 
 .header-logo{
-
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-img{
+.logo-img{
   border-radius: 50%;
-  width: auto;
+  width: 100px;
+  height: 90px;
+}
+
+.header-label{
+  padding-top: 20px;
 }
