@@ -1,0 +1,42 @@
+<ion-app>
+  <ion-split-pane contentId="main-content" when="false">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list id="inbox-list">
+          
+          <div class="header d-flex">
+            <div class="header-logo">
+              <img class="logo-img" src="assets/images/test.png" alt="Logo">
+            </div>
+            <div class="header-label">
+              <ion-list-header>Artist Name</ion-list-header>
+              <ion-note>Singer</ion-note>
+            </div>
+          </div>
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item class="my-3" routerDirection="root" routerLink="home" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="'home-outline'" [md]="'home-sharp'"></ion-icon>
+              <ion-label>Home</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          
+          <ion-menu-toggle auto-hide="false">
+            <ion-item class="my-3" routerDirection="root" routerLink="videos" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="'videocam-outline'" [md]="'videocam-sharp'"></ion-icon>
+              <ion-label>Videos</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item class="my-3" routerDirection="root" routerLink="about" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="'help-circle-outline'" [md]="'help-circle-sharp'"></ion-icon>
+              <ion-label>About</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

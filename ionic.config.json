@@ -1,0 +1,7 @@
+{
+  "name": "ITIPT02-Finals",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
