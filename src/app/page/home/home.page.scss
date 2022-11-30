@@ -99,16 +99,16 @@ iframe {
     .main-content {
 
         .home-text {
-            #content-text , #content-text2 {
+            #content-text {
                 font-size: 3rem;
             }
-        
+            #content-text2 {
+                font-size: 1.5rem;
+            }
             #content-textview,#content-subtext {
                 font-size: 1.5rem;
                 padding:0;
             }
-
-    
         }
     }
 
