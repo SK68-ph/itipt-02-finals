@@ -11,13 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('./page/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'videos',
-    loadChildren: () => import('./page/videos/videos.module').then( m => m.VideosPageModule)
-  },
-  {
     path: 'about',
     loadChildren: () => import('./page/about/about.module').then( m => m.AboutPageModule)
-  },  {
+  },
+  {
     path: 'albums',
     loadChildren: () => import('./page/albums/albums.module').then( m => m.AlbumsPageModule)
   },
@@ -28,6 +25,14 @@ const routes: Routes = [
   {
     path: 'documentary',
     loadChildren: () => import('./page/documentary/documentary.module').then( m => m.DocumentaryPageModule)
+  },
+  {
+    path: 'awards',
+    loadChildren: () => import('./page/awards/awards.module').then( m => m.AwardsPageModule)
+  },
+  {
+    path: 'biography',
+    loadChildren: () => import('./page/biography/biography.module').then( m => m.BiographyPageModule)
   }
 
 ];
