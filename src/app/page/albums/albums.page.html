@@ -15,7 +15,275 @@
   </ion-header>
 
   <div id="content-img">
-    <strong class="capitalize">Albums</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="container">
+      <div class="row row-cols-1">
+        <div class="col d-flex flex-column justify-content-center align-items-center">
+          <h2>Midnights</h2>
+          <img src="assets/images/album-midnights.jpg" alt="" />
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+          <ion-button
+            expand="block"
+            (click)="setOpen(true)"
+            color="primary"
+            shape="round"
+            fill="solid"
+          >
+            <ion-icon
+              slot="end"
+              class="px-1"
+              name="play-circle-outline"
+            ></ion-icon>
+            Play</ion-button
+          >
+          <ion-modal [isOpen]="isModalOpen">
+            <ng-template>
+              <ion-header>
+                <ion-toolbar>
+                  <ion-title>Midnights</ion-title>
+                  <ion-buttons slot="end">
+                    <ion-button
+                      (click)="setOpen(false)"
+                      color="primary"
+                      shape="round"
+                      fill="solid"
+                      >Close</ion-button
+                    >
+                  </ion-buttons>
+                </ion-toolbar>
+              </ion-header>
+              <ion-content class="ion-padding">
+                <iframe
+                  style="border-radius: 12px"
+                  src="https://open.spotify.com/embed/album/3lS1y25WAhcqJDATJK70Mq?utm_source=generator"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                ></iframe>
+              </ion-content>
+            </ng-template>
+          </ion-modal>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="col d-flex flex-column justify-content-center align-items-center">
+            <h2>Red</h2>
+            <img src="assets/images/album-RED.jpg" alt="" />
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <ion-button
+              expand="block"
+              (click)="setOpen2(true)"
+              color="primary"
+              shape="round"
+              fill="solid"
+            >
+              <ion-icon
+                slot="end"
+                class="px-1"
+                name="play-circle-outline"
+              ></ion-icon>
+              Play</ion-button
+            >
+            <ion-modal [isOpen]="isModalOpen2">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Red</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button
+                        (click)="setOpen2(false)"
+                        color="primary"
+                        shape="round"
+                        fill="solid"
+                        >Close</ion-button
+                      >
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/album/6kZ42qRrzov54LcAk4onW9?utm_source=generator"
+                    width="100%"
+                    height="380"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="col d-flex flex-column justify-content-center align-items-center">
+            <h2>Fearless</h2>
+            <img src="assets/images/album-FEARLESS.jpg" alt="" />
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <ion-button
+              expand="block"
+              (click)="setOpen3(true)"
+              color="primary"
+              shape="round"
+              fill="solid"
+            >
+              <ion-icon
+                slot="end"
+                class="px-1"
+                name="play-circle-outline"
+              ></ion-icon>
+              Play</ion-button
+            >
+            <ion-modal [isOpen]="isModalOpen3">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Fearless</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button
+                        (click)="setOpen3(false)"
+                        color="primary"
+                        shape="round"
+                        fill="solid"
+                        >Close</ion-button
+                      >
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/album/4hDok0OAJd57SGIT8xuWJH?utm_source=generator"
+                    width="100%"
+                    height="380"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe
+                ></ion-content>
+              </ng-template>
+            </ion-modal>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="col d-flex flex-column justify-content-center align-items-center">
+            <h2>Evermore</h2>
+            <img src="assets/images/album-evermore.png" alt="" />
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <ion-button
+              expand="block"
+              (click)="setOpen4(true)"
+              color="primary"
+              shape="round"
+              fill="solid"
+            >
+              <ion-icon
+                slot="end"
+                class="px-1"
+                name="play-circle-outline"
+              ></ion-icon>
+              Play</ion-button
+            >
+            <ion-modal [isOpen]="isModalOpen4">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Evermore</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button
+                        (click)="setOpen4(false)"
+                        color="primary"
+                        shape="round"
+                        fill="solid"
+                        >Close</ion-button
+                      >
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/album/2Xoteh7uEpea4TohMxjtaq?utm_source=generator"
+                    width="100%"
+                    height="380"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="col d-flex flex-column justify-content-center align-items-center">
+            <h2>Folklore</h2>
+            <img src="assets/images/album-folklore.png" alt="" />
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <ion-button
+              expand="block"
+              (click)="setOpen5(true)"
+              color="primary"
+              shape="round"
+              fill="solid"
+            >
+              <ion-icon
+                slot="end"
+                class="px-1"
+                name="play-circle-outline"
+              ></ion-icon>
+              Play</ion-button
+            >
+            <ion-modal [isOpen]="isModalOpen5">
+              <ng-template>
+                <ion-header>
+                  <ion-toolbar>
+                    <ion-title>Midnights</ion-title>
+                    <ion-buttons slot="end">
+                      <ion-button
+                        (click)="setOpen5(false)"
+                        color="primary"
+                        shape="round"
+                        fill="solid"
+                        >Close</ion-button
+                      >
+                    </ion-buttons>
+                  </ion-toolbar>
+                </ion-header>
+                <ion-content class="ion-padding">
+                  <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/album/0PZ7lAru5FDFHuirTkWe9Z?utm_source=generator"
+                    width="100%"
+                    height="380"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                  ></iframe>
+                </ion-content>
+              </ng-template>
+            </ion-modal>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>

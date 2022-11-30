@@ -1,0 +1,29 @@
+.container{
+    padding-top: 60px;
+}
+
+img {
+    padding: 50px 50px 50px 50px;
+    max-width: 40vw;
+    max-height: 50vh;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 70%);
+    background-color: #ccc;
+}
+
+h2{
+    color: black;
+    font-family: "Monument Extended", Helvetica, Arial, sans-serif;
+    padding-bottom: 20px;
+}
+
+ion-button{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 850px) {
+    img{
+        padding: 0;
+        max-width: 60vw;
+        max-height: 60vh;
+    }
+}
