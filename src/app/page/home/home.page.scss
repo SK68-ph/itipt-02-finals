@@ -1,30 +1,104 @@
 ion-content {
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
 }
 
-#home-img{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("/assets/images/bg-taylowswift.jpg") ;
+#home-img {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/assets/images/bg-taylowswift.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 94vh;
 }
 
-#content-img{
+#content-img {
     background-image: url("/assets/images/bg.jpg");
     background-size: cover;
     min-height: 94vh;
 }
-#title, #header{
-    font-family: "Monument Extended", "Helvetica", Arial, sans-serif;
+#title,
+#header {
+    font-family: "Monument Extended", Helvetica, Arial, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     font-size: 3rem;
 }
 
-#title{
+#title {
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #F1F1F1;
+    -webkit-text-stroke-color: #f1f1f1;
     -webkit-text-fill-color: transparent;
     letter-spacing: 0.05em;
+}
+
+#hero-text {
+    position: absolute;
+    bottom: 45%;
+}
+
+// Section
+img {
+    max-width: 40vw;
+    max-height: 50vh;
+}
+iframe {
+    max-width: 60vw;
+    max-height: 60vh;
+}
+
+.content-header {
+    padding-right: 50%;
+    padding-bottom: 50px;
+}
+
+.main-content {
+    font-family: "Monument Extended", Helvetica, Arial, sans-serif;
+    color: black;
+    padding-top: 20vh;
+    .home-text {
+        font-family: "IvyMode Italic", "Monument Extended", Helvetica, Arial, sans-serif;
+
+        #content-text {
+            font-size: 5rem;
+        }
+        #content-textview {
+            text-decoration: none;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #hero-text {
+        position: absolute;
+        bottom: 15%;
+    }
+
+    .content-header {
+        padding-right: 0px;
+    }
+
+    img {
+        max-width: 60vw;
+        max-height: 70vh;
+    }
+    iframe {
+        max-width: 80vw;
+        max-height: 50vh;
+    }
+
+    .main-content {
+
+        .home-text {
+            #content-text {
+                font-size: 3rem;
+            }
+        
+            #content-textview {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
 }

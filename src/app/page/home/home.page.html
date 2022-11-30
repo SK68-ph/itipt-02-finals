@@ -17,7 +17,7 @@
   <div id="home-img">
     <div class="container-fluid">
       <div class="d-flex">
-        <div class="px-5" style="position:absolute;bottom:50%;">
+        <div class="px-5" id="hero-text">
           <h1 id="title">Hi I'm Taylor Swift</h1>
           <h2 id="header">A <span id="occupation">Singer</span></h2>
         </div>
@@ -25,6 +25,49 @@
     </div>
   </div>
   <div id="content-img">
-    <h1>GG</h1>
+    <div class="container py-5">
+      <div class="main-content">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center text-center"
+        >
+          <h1 class="content-header">Latest Album</h1>
+          <div class="home-img">
+            <img src="assets/images/album-midnights.jpg" />
+          </div>
+          <div class="home-text">
+            <h2 id="content-text">Midnights</h2>
+            <a id="content-textview"
+              >Click to view all albums
+              <ion-icon name="arrow-forward-circle-outline"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div
+          class="d-flex flex-column align-items-center justify-content-center text-center"
+        >
+          <h1 class="content-header">Latest Music Video</h1>
+          <div class="home-img">
+            <iframe
+              width="1000"
+              height="1000"
+              src="https://www.youtube.com/embed/b7QlX3yR2xs?controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="home-text">
+            <h2 id="content-text">Bejeweled</h2>
+            <a id="content-textview"
+              >Click to view all albums
+              <ion-icon name="arrow-forward-circle-outline"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </ion-content>
