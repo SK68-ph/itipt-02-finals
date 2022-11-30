@@ -17,6 +17,17 @@ const routes: Routes = [
   {
     path: 'about',
     loadChildren: () => import('./page/about/about.module').then( m => m.AboutPageModule)
+  },  {
+    path: 'albums',
+    loadChildren: () => import('./page/albums/albums.module').then( m => m.AlbumsPageModule)
+  },
+  {
+    path: 'photogallery',
+    loadChildren: () => import('./page/photogallery/photogallery.module').then( m => m.PhotogalleryPageModule)
+  },
+  {
+    path: 'documentary',
+    loadChildren: () => import('./page/documentary/documentary.module').then( m => m.DocumentaryPageModule)
   }
 
 ];

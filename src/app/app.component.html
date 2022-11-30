@@ -20,6 +20,24 @@
               <ion-label>Home</ion-label>
             </ion-item>
           </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item class="my-3" routerDirection="root" routerLink="albums" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="'albums-outline'" [md]="'albums-sharp'"></ion-icon>
+              <ion-label>Albums</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item class="my-3" routerDirection="root" routerLink="photogallery" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="'images-outline'" [md]="'images-sharp'"></ion-icon>
+              <ion-label>Photo Gallery</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item class="my-3" routerDirection="root" routerLink="documentary" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="'film-outline'" [md]="'film-sharp'"></ion-icon>
+              <ion-label>Documentary</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
           
           <ion-menu-toggle auto-hide="false">
             <ion-item class="my-3" routerDirection="root" routerLink="videos" lines="none" detail="false" routerLinkActive="selected">
