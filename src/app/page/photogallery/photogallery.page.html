@@ -3,19 +3,38 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Albums</ion-title>
+    <ion-title>Photo Gallery</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Albums</ion-title>
+      <ion-title size="large">Photo Gallery</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="content-img">
-    <strong class="capitalize">Albums</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="container-fluid ion-padding">
+
+        <swiper
+          [autoplay]="true"
+          [pagination]="true"
+          [zoom]="true"
+        >
+          <ng-template swiperSlide>
+            <img style="height: 90vh;" class="logo-img" src="assets/images/photo-1.jpg" alt="Logo"  />
+          </ng-template>
+          <ng-template swiperSlide>
+            <img style="height: 90vh;" class="logo-img" src="assets/images/photo-2.jpg" alt="Logo" />
+          </ng-template>
+          <ng-template swiperSlide>
+            <img style="height: 90vh;" class="logo-img" src="assets/images/photo-3.jpg" alt="Logo"
+          /></ng-template>
+          <ng-template swiperSlide>
+            <img style="height: 90vh;" class="logo-img" src="assets/images/photo-4.jpg" alt="Logo"
+          /></ng-template>
+        </swiper>
+    </div>
   </div>
 </ion-content>

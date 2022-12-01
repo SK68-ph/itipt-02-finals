@@ -8,12 +8,15 @@ import { PhotogalleryPageRoutingModule } from './photogallery-routing.module';
 
 import { PhotogalleryPage } from './photogallery.page';
 
+import { SwiperModule } from 'swiper/angular';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PhotogalleryPageRoutingModule
+    PhotogalleryPageRoutingModule,
+    SwiperModule
   ],
   declarations: [PhotogalleryPage]
 })
