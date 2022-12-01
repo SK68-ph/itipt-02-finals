@@ -10,6 +10,7 @@ h1 {
 
 p{
     padding-top: 30px;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
     font-size: 1.3rem;
 }
 
@@ -19,4 +20,19 @@ iframe{
     max-height: 70vw;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+@media screen and (max-width: 850px) {
+
+    h1 {
+        font-size: 1.3rem;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    p{
+        padding-top: 30px;
+        font-size: 1.0rem;
+    }
+    
 }

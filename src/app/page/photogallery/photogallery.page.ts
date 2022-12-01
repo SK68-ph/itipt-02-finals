@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { Autoplay, Keyboard, Pagination, Scrollbar, Zoom } from 'swiper';
+import SwiperCore, { Autoplay,  Pagination, Zoom } from 'swiper';
 
-SwiperCore.use([Autoplay, Keyboard, Pagination, Scrollbar, Zoom]);
+SwiperCore.use([Autoplay, Pagination, Zoom]);
 
 @Component({
   selector: 'app-photogallery',

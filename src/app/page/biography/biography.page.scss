@@ -11,6 +11,8 @@ h1 {
 p{
     font-family: "Poppins", Helvetica, Arial, sans-serif;
     font-size: 1.2rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 img{
@@ -24,4 +26,10 @@ hr {
     height: 7px;
     background: black;
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    p{
+        font-size: 1rem;
+    }
 }
