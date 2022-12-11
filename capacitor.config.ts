@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.taylorswift',
-  appName: 'ITIPT02-Finals',
+  appName: 'TaylorSwift App',
   webDir: 'www',
   bundledWebRuntime: false
 };
